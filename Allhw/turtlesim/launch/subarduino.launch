@@ -1,0 +1,9 @@
+<launch>
+    <node name="gui" pkg="testfinal" type="subarduino.py"/>
+        <!-- </node> -->
+    <node name="ardouino" pkg="rosserial_arduino" type="serial_node.py"/> 
+  <!-- <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py"> -->
+    <param name="port"              type="string"               value="/dev/ttyUSB0"/|>
+    <param name="baud"              type="int"                  value="57600"/>
+    </node> 
+</launch>
